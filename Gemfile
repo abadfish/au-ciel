@@ -25,12 +25,11 @@ gem 'active_model_serializers'
 gem 'responders'
 gem 'bower-rails'
 gem 'angular-rails-templates'
-gem 'devise'
-gem 'pundit'
 gem 'carrierwave'
 gem 'paperclip', '>= 5.0.0'
 gem 'jquery-fileupload-rails'
 gem 'aws-sdk', '~> 2'
+gem 'rails_admin', '~> 1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 

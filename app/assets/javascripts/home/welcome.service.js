@@ -5,6 +5,7 @@
   function WelcomeService ($state, $window, $location, ModalService) {
     var ctrl = this;
     ctrl.contactModal = contactModal;
+    ctrl.thankYouModal = thankYouModal;
 
     function contactModal() {
       ModalService.showModal({
@@ -12,8 +13,20 @@
         controller: 'UsersController'
       }).then(function(modal) {
         modal.element.modal();
-        modal.close.then(function(result) {
-          console.log(result);
+        modal.close.then(function() {
+          console.log(user);
+        });
+      });
+    }
+
+    function thankYouModal() {
+      ModalService.showModal({
+        templateUrl: 'users/thankyou.html',
+        controller: 'UsersController'
+      }).then(function(modal) {
+        modal.element.modal();
+        modal.close.then(function(user) {
+          console.log(user);
         });
       });
     }

@@ -8,13 +8,14 @@
           createUser: createUser
         }
 
-    function createUser() {
+    function createUser(user) {
       var req = {
               method: 'POST',
               url: '/users',
               headers: {
                   'Content-Type': 'application/json'
-              }
+              },
+              data: {user: user}
           }
           return $http(req)
                   .then(handleResponse)

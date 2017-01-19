@@ -7,13 +7,16 @@
       </div>
       <div class="modal-body">
         <div class="modal-body">
-          <h5>Email: </h5>
-          <h5>Name: </h5>
+          <h5>We would love to hear from you! Please give us a call at 914.591.1135 or leave us your email here and we'll be in touch shortly!</h5><br />
+          <div class="feature bordered text-center">
+            <form>
+              <input type="text" ng-model="user.first_name" value="" placeholder="NAME">
+              <input type="email" ng-model="user.email" value="" placeholder="EMAIL">
+              <input type="submit" ng-click="createUser(user)" class="btn btn-primary" data-dismiss="modal">
+            </form>
+          </div>
         </div>
         <div class="modal-footer">
-
-          <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Close</button>
-          <button type="button" ng-click="vm.createUser(email)" class="btn btn-primary" data-dismiss="modal">Submit</button>
 
         </div>
 		  </div>

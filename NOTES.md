@@ -14,6 +14,9 @@ Irvington, NY 10533
 
 *Right now has my credit card on file- NEEDS TO BE CHANGED OR WILL EXPIRE*
 
+Heroku account for hosting
+login: au.ciel.site@gmail.com
+pw: 50SouthBuckhout
 
 
 
@@ -42,9 +45,8 @@ rails_admin
   -Tables
   -Gatherings
   -Flowers/Arrangements
-  -Gifts
   -Contact
-  -connect via twitter, facebook, instagram
+  -connect via facebook, instagram
 
 4. Welcome page with navigation
   -separate home page for each section with different video background

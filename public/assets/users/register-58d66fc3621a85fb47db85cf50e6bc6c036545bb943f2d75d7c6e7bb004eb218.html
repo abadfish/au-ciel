@@ -1,0 +1,25 @@
+<div class="modal fade">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Let's Get In Touch!</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <h5>We would love to hear from you! Please give us a call at 914.591.1135 or leave us your email here and we'll be in touch shortly!</h5><br />
+          <div class="feature bordered text-center">
+            <form>
+              <input type="text" ng-model="user.first_name" value="" placeholder="NAME">
+              <input type="email" ng-model="user.email" value="" placeholder="EMAIL">
+              <input type="submit" ng-click="createUser(user)" class="btn btn-primary" data-dismiss="modal">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+		  </div>
+		</div>
+  </div>
+</div>

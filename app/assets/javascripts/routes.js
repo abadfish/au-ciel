@@ -19,22 +19,32 @@
         .state('home.weddings', {
           url: 'weddings',
           templateUrl: 'galleries/weddings.html',
-          controller: 'GalleryController as vm'
+          controller: 'WeddingsController as vm'
         })
         .state('home.tables', {
           url: 'tables',
           templateUrl: 'galleries/tables.html',
-          controller: 'GalleryController as vm'
+          controller: 'TablesController as vm'
         })
         .state('home.gatherings', {
           url: 'gatherings',
           templateUrl: 'galleries/gatherings.html',
-          controller: 'GalleryController as vm'
+          controller: 'GatheringsController as vm'
         })
         .state('home.arrangements', {
           url: 'arrangements',
           templateUrl: 'galleries/arrangements.html',
-          controller: 'GalleryController as vm'
+          controller: 'ArrangementsController as vm'
+        })
+        .state('home.about', {
+          url: 'about',
+          templateUrl: 'home/about.html',
+          controller: 'HomeController as vm'
+        })
+        .state('home.thankyou', {
+          url: 'about',
+          templateUrl: 'home/thankyou.html',
+          controller: 'HomeController as vm'
         })
         $urlRouterProvider.otherwise('/')
     })

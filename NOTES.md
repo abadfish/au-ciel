@@ -1,3 +1,22 @@
+gmail account for AWS
+au.ciel.site@gmail.com
+pw: Buckhout
+Birthday: Jan 1 1980
+*recovery email: macrodynamo@gmail.com*
+
+AWS account for images and video content
+login: au.ciel.site@gmail.com
+pw: Buckhout
+*phone number currently 9177630590, needs to be 9145911135*
+Full Name: Au Ciel
+50 South Buckhout St. Ste. G105
+Irvington, NY 10533
+
+*Right now has my credit card on file- NEEDS TO BE CHANGED OR WILL EXPIRE*
+
+
+
+
 rails g bower_rails:initialize json
 
 

@@ -4,9 +4,7 @@
 
   function UsersController ($scope, $element, close, UserFactory) {
 
-    $scope.email = user.email;
     $scope.createUser = createUser;
-    $scope.id = user.id;
 
 
     $scope.close = function(result) {

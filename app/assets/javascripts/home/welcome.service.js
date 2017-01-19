@@ -2,20 +2,9 @@
 
   'use strict';
 
-  function WelcomeService ($element, $state, $window, $location, ModalService) {
-    var vm = this;
-    vm.loadVideo = loadVideo;
-    vm.contactModal = contactModal;
-
-    activate();
-
-    function activate() {
-      loadVideo();
-    }
-
-    function loadVideo() {
-      document.getElementById("mp4_src").src = "https://s3.amazonaws.com/au-ciel/sky-14s.mp4";
-    }
+  function WelcomeService ($state, $window, $location, ModalService) {
+    var ctrl = this;
+    ctrl.contactModal = contactModal;
 
     function contactModal() {
       ModalService.showModal({
@@ -24,20 +13,15 @@
       }).then(function(modal) {
         modal.element.modal();
         modal.close.then(function(result) {
-          if (result === 'redirect') {
-            $state.go("home.thankyou")
-          } else {
-            console.log(result);
-          }
+          console.log(result);
         });
       });
     }
+
   }
-
-
 
   angular
     .module('au-ciel')
-    .controller('WelcomeService', WelcomeService)
+    .service('WelcomeService', WelcomeService)
 
 }());
